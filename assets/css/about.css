@@ -1,0 +1,75 @@
+/* About Us Page Specific Styles */
+
+.about-page-content {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding: 40px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-page-image {
+    flex: 1.5;
+}
+.about-page-text {
+    flex: 1;
+}
+
+.about-page-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.about-page-text h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.about-page-text ul {
+    list-style: none;
+    margin-bottom: 30px;
+    padding-left: 0;
+}
+
+.about-page-text ul li {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.6;
+}
+
+.about-page-text ul li .icon {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: var(--primary-color);
+    width: 30px;
+    text-align: center;
+}
+
+.about-page-text p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+/* Responsive adjustments for about page */
+@media (max-width: 768px) {
+    .about-page-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-page-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-page-text ul li {
+        justify-content: center;
+    }
+}

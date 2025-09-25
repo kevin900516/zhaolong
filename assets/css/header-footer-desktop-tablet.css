@@ -1,0 +1,22 @@
+@media (min-width:768px) and (max-width:1024px) {
+    /* --- Tablet & Small Desktop Styles for Header/Footer --- */
+
+    /* Reduce navigation link spacing to prevent wrapping */
+    .nav-links li {
+        margin-left: 20px;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+
+    /* Adjust footer layout if necessary */
+    .footer-content {
+        gap: 30px;
+        justify-content: space-between;
+    }
+
+    .footer-section {
+        min-width: 240px;
+    }
+}
