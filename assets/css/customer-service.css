@@ -1,0 +1,36 @@
+.contact-section-wrapper {
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+}
+
+.map-container {
+    flex: 2 1 600px; /* Increased flex-grow and flex-basis */
+    min-height: 500px; /* Increased min-height */
+}
+
+.contact-info {
+    flex: 1 1 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-info h2 {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}

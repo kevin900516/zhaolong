@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="assets/css/header-footer.css">
     <link rel="stylesheet" href="assets/css/header-footer-desktop-tablet.css">
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/customer-service.css">
 </head>
 <body>
     <header>
@@ -32,7 +34,27 @@
     </header>
 
     <main>
-        <h1>客戶服務</h1>
+        <h1 class="fade-in-element">客戶服務</h1>
+
+        <div class="contact-section-wrapper container fade-in-element">
+            <section class="contact-section">
+                <div class="map-container">
+                    <iframe
+                        width="100%"
+                        height="100%"
+                        frameborder="0"
+                        style="border:0"
+                        src="https://maps.google.com/maps?q=臺中市大里區東興里國光路二段706之7號&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+                <div class="contact-info">
+                    <h2>聯絡資訊</h2>
+                    <p><strong>地址：</strong> 臺中市大里區東興里國光路二段706之7號</p>
+                    <p><strong>聯絡電話：</strong> 04-24063435</p>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer>
@@ -43,6 +65,7 @@
                     <ul>
                         <li><a href="member-center.html">會員中心</a></li>
                         <li><a href="terms.html">使用條款</a></li>
+                        <li><a href="customer-service.html">客戶服務</a></li>
                     </ul>
                 </div>
                 <div class="footer-section contact">
@@ -56,7 +79,7 @@
             </div>
             <div class="footer-bottom">
                 <div class="social-media">
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.facebook.com/profile.php/?id=61580251215035" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     <a href="#" aria-label="Line"><i class="fab fa-line"></i></a>
                 </div>
@@ -67,5 +90,6 @@
         </div>
     </footer>
 
+    <script src="assets/js/animations.js" defer></script>
 </body>
 </html>

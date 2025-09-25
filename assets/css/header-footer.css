@@ -219,7 +219,7 @@ footer {
 .footer-bottom .copyright {
     order: 1;
     flex-grow: 1;
-    text-align: left;
+    text-align: center;
 }
 
 /* Making footer social icons similar to header but adaptable */
