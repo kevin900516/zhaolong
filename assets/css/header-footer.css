@@ -227,3 +227,79 @@ footer {
     margin: 0 10px;
     font-size: 1.2rem;
 }
+
+/* Hamburger Menu & Mobile Navigation */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    padding: 15px;
+    z-index: 1001;
+    background-color: transparent;
+    border: none;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: var(--text-light);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+@media (max-width: 1023px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        position: fixed; /* Use fixed positioning */
+        top: 0;
+        right: -100%; /* Start off-screen to the right */
+        width: 300px; /* Set a fixed width for the menu */
+        height: 100vh; /* Full height */
+        background-color: var(--dark-bg);
+        padding: 100px 20px 20px;
+        box-shadow: -4px 0 8px rgba(0,0,0,0.2);
+        transition: right 0.4s ease-in-out;
+        z-index: 1000; /* Ensure it's above the overlay */
+    }
+
+    .nav-links.nav-active {
+        right: 0; /* Slide into view */
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .hamburger-menu.is-active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger-menu.is-active span:nth-child(2) {
+        opacity: 0;
+    }
+
+.hamburger-menu.is-active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+/* Overlay for mobile menu */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999; /* Below the nav links but above everything else */
+}
+
+.overlay.is-active {
+    display: block;
+}

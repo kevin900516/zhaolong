@@ -12,7 +12,6 @@
 </head>
 <body>
     <header>
-        
         <nav class="main-nav">
             <div class="container">
                 <a href="index.html" class="logo">
@@ -28,6 +27,11 @@
                     <li><a href="member-center.html">會員中心</a></li>
                     <li><a href="customer-service.html">客戶服務</a></li>
                 </ul>
+                <button class="hamburger-menu" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </nav>
     </header>
@@ -71,7 +75,9 @@
     </footer>
 
     <button id="back-to-top-btn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
-    <script src="assets/js/animations.js" defer></script>
-    <script src="assets/js/back-to-top.js" defer></script>
+    <div class="overlay"></div>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/back-to-top.js"></script>
+    <script src="assets/js/header.js"></script>
 </body>
 </html>
